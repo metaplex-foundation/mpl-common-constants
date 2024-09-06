@@ -10,7 +10,6 @@ pub mod constants {
 #[cfg(feature = "mainnet")]
 pub mod constants {
     // staking dependencies
-    // staking dependencies
     pub const REWARD_CONTRACT_ID: &str = "";
     pub const DAO_PUBKEY: &str = "";
     pub const GOVERNANCE_PROGRAM_ID: &str = "";
