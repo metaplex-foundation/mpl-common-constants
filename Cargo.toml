@@ -9,8 +9,6 @@ bs58 = { version = "0.5.1", optional = true}
 [features]
 devnet = []
 mainnet = []
-build-binary = ["bs58"]
-
 
 [lib]
 name = "mpl_common_constants"
@@ -19,5 +17,5 @@ path = "src/lib.rs"
 [[bin]]
 name = "mpl_common_constants"
 path = "src/bin/main.rs"
-required-features = ["build-binary"]
+required-features = ["bs58"]
 
