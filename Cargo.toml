@@ -4,6 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+# use solana program but not sdk because this crate
+# may be imported to Solana programs
+solana-program = "1.18.15"
 bs58 = { version = "0.5.1", optional = true}
 
 [features]
