@@ -9,6 +9,7 @@ bs58 = { version = "0.5.1", optional = true}
 [features]
 devnet = []
 mainnet = []
+alternative-mainnet = []
 
 [lib]
 name = "mpl_common_constants"

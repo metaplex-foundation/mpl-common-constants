@@ -66,3 +66,40 @@ pub mod constants {
         0, 0,
     ];
 }
+
+#[cfg(feature = "alternative-mainnet")]
+pub mod constants {
+    // staking dependencies
+
+    /// ID of the reward contract
+    ///  CnAF8KyrSH3mmzdyeRR7wh69ZxBrxf3diue7VbRH8Nzh
+    pub const REWARD_CONTRACT_ID: [u8; 32] = [
+        175, 2, 36, 242, 72, 250, 9, 56, 148, 246, 59, 20, 99, 40, 124, 164, 94, 151, 149, 105, 66,
+        83, 123, 103, 111, 94, 105, 213, 41, 227, 42, 158,
+    ];
+
+    /// DAO address
+    /// 6uNDnX1WR2HkL4Wa5kW1NkmGsveyDgRcpw3HP1g9dfKz
+    pub const DAO_PUBKEY: [u8; 32] = [
+        87, 180, 161, 118, 176, 58, 119, 174, 208, 195, 191, 185, 249, 101, 154, 54, 222, 64, 90,
+        100, 1, 133, 219, 104, 145, 52, 63, 78, 166, 228, 68, 37,
+    ];
+    /// DAO's community mint
+    /// 2BAXFATc1357naNu8yeYCYQzSVw5tPuj1BzjawrS4M4x
+    pub const DAO_GOVERNING_MINT: [u8; 32] = [
+        17, 118, 66, 206, 15, 45, 4, 125, 61, 141, 177, 185, 128, 109, 160, 192, 43, 177, 30, 210,
+        119, 203, 68, 81, 131, 53, 161, 147, 72, 50, 72, 93,
+    ];
+
+    /// The address of the Governance Program (Metaplex fork)
+    /// GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw
+    pub const GOVERNANCE_PROGRAM_ID: [u8; 32] = [
+        234, 228, 53, 189, 238, 117, 183, 52, 205, 89, 62, 207, 154, 48, 75, 128, 36, 186, 40, 152,
+        103, 183, 105, 177, 249, 60, 167, 187, 184, 142, 70, 254,
+    ];
+    pub const REALM_NAME: &str = "staking-test";
+    pub const FEE_RECEIVER: [u8; 32] = [
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0,
+    ];
+}
